@@ -1,0 +1,49 @@
+=======================================================
+PATIENT RISK STRATIFICATION MODEL
+=======================================================
+Dataset: 71,518 subjects
+Outcome: 30-day readmission (READMFL)
+Overall rate: 8.8%
+
+Features used: ['LOS', 'NUMMED', 'NUMDIAG', 'AEFL_N', 'SEX_N', 'TRTA_N', 'AGE_N', 'MED_N']
+Model dataset: 71,518 subjects after dropping missing
+
+=======================================================
+MODEL PERFORMANCE
+=======================================================
+              precision    recall  f1-score   support
+
+           0       0.91      1.00      0.95     13045
+           1       0.00      0.00      0.00      1259
+
+    accuracy                           0.91     14304
+   macro avg       0.46      0.50      0.48     14304
+weighted avg       0.83      0.91      0.87     14304
+
+AUC-ROC: 0.581
+
+=======================================================
+RISK DRIVERS — ODDS RATIOS
+=======================================================
+        Feature  Coefficient  Odds_Ratio
+   Diabetes Med     0.262396    1.300041
+        AE Flag     0.075291    1.078198
+      Age Group     0.073256    1.076006
+            Sex     0.055214    1.056767
+ Length of Stay     0.044127    1.045115
+  Num Diagnoses     0.029775    1.030223
+      Treatment    -0.025240    0.975076
+Num Medications     0.000686    1.000686
+
+=======================================================
+PATIENT RISK STRATIFICATION
+=======================================================
+                 N  Actual_Readmit_Rate  Mean_LOS  Mean_Medications  Mean_Diagnoses
+RISK_GROUP                                                                         
+Low Risk     13854                  5.7     2.266            10.900           5.329
+Medium Risk  52618                  9.3     4.240            16.166           7.618
+High Risk     5046                 11.8    10.355            24.094           8.624
+
+=======================================================
+GENERATING PLOTS
+=======================================================

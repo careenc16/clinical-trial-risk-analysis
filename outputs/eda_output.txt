@@ -1,0 +1,124 @@
+=======================================================
+CLINICAL EDA — DATASET OVERVIEW
+=======================================================
+DM  (Demographics): 71,518 subjects
+AE  (Adverse Events): 101,766 events
+ADSL (Analysis):    71,518 subjects
+
+=======================================================
+SECTION 1: DEMOGRAPHICS — TABLE 14.1
+=======================================================
+
+Age Group (AGEGR1):
+AGEGR1
+[0-10)        154
+[10-20)       535
+[20-30)      1127
+[30-40)      2699
+[40-50)      6878
+[50-60)     12466
+[60-70)     15960
+[70-80)     18210
+[80-90)     11589
+[90-100)     1900
+Name: count, dtype: int64
+
+Sex (SEX):
+SEX
+Female             38025
+Male               33490
+Unknown/Invalid        3
+Name: count, dtype: int64
+
+Race (RACE):
+RACE
+Caucasian          53491
+AfricanAmerican    12887
+Hispanic            1517
+Other               1178
+Asian                497
+Name: count, dtype: int64
+
+=======================================================
+SECTION 2: ADVERSE EVENT ANALYSIS
+=======================================================
+
+AE Severity (AESEV):
+AESEV
+MODERATE    49185
+MILD        31432
+SEVERE      21149
+Name: count, dtype: int64
+
+AE Body System (AEBODSYS):
+AEBODSYS
+CARDIOVASCULAR         30389
+OTHER                  25037
+GASTROINTESTINAL       10832
+RESPIRATORY            10541
+ENDOCRINE/METABOLIC     8757
+INJURY/POISONING        7046
+MUSCULOSKELETAL         4957
+RENAL/URINARY           2562
+Name: count, dtype: int64
+
+Serious AEs (AESER = Y):
+  Total SAEs: 11,357 (11.2% of all AEs)
+
+Top 10 Primary Diagnoses (AEDECOD):
+AEDECOD
+428    6862
+414    6581
+786    4016
+410    3614
+486    3508
+427    2766
+491    2275
+715    2151
+682    2042
+434    2028
+Name: count, dtype: int64
+
+=======================================================
+SECTION 3: OUTCOME ANALYSIS — READMISSION
+=======================================================
+
+Overall 30-day readmission rate: 8.8%
+
+Readmission by Age Group:
+          Rate      N
+AGEGR1               
+[80-90)   10.4  11589
+[70-80)   10.0  18210
+[60-70)    8.9  15960
+[90-100)   8.8   1900
+[20-30)    7.4   1127
+[40-50)    7.4   6878
+[50-60)    7.1  12466
+[30-40)    7.0   2699
+[10-20)    4.9    535
+[0-10)     1.9    154
+
+Readmission by Treatment (TRTA):
+        Rate      N
+TRTA               
+Down    10.3   7505
+Up       9.6   6963
+Steady   9.1  22129
+No       8.1  34921
+
+Readmission by AE Flag (AEFL):
+      Rate      N
+AEFL             
+N      7.0  16843
+Y      9.4  54675
+
+Readmission by Diabetes Medication (DIABMEDFL):
+           Rate      N
+DIABMEDFL             
+No          7.3  17199
+Yes         9.3  54319
+
+=======================================================
+SECTION 4: GENERATING PLOTS
+=======================================================
