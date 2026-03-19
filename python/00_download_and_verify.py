@@ -1,7 +1,4 @@
-# ============================================================
-# STEP 0: Download Diabetes Dataset + Verify ALL Data
-# Run this ONCE to get everything set up
-# ============================================================
+
 
 import pandas as pd
 import numpy as np
@@ -65,7 +62,7 @@ for f in xpt_files:
     else:
         print(f"  ✗ {f:10s} — NOT FOUND")
 
-# ── PART 3: Quick peek at DM domain ─────────────────────────
+#PART 3: Quick peek at DM domain ─────────────────────────
 print("\n" + "=" * 60)
 print("PART 3: Quick look at DM (Demographics) domain")
 print("=" * 60)
