@@ -1,7 +1,3 @@
-# ============================================================
-# Quick fix: Re-download with patient IDs included
-# The UCI library separates IDs from features — we need both
-# ============================================================
 
 import pandas as pd
 from ucimlrepo import fetch_ucirepo
