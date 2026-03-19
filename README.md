@@ -15,7 +15,7 @@ In clinical trials and hospital settings, not all patients respond to treatment 
 
 **This project answers one core clinical question:**
 
-> *"Which patients are at highest risk for adverse outcomes — and what clinical factors drive that risk?"*
+> *"Which patients are at highest risk for adverse outcomes and what clinical factors drive that risk?"*
 
 This is the exact analytical question that Statistical Programmers and Clinical Data Analysts solve every day at CROs and pharmaceutical companies.
 
