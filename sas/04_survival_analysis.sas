@@ -1,7 +1,4 @@
-/* ================================================
-   SAS Program 4: Survival Analysis
-   Kaplan-Meier + Risk Summary
-   ================================================ */
+
 
 data survival;
   input USUBJID $ TRTA $ AVAL CNSR AGEGR $;
