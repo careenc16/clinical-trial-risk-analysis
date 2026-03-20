@@ -1,7 +1,4 @@
-/* ================================================
-   SAS Program 2: Adverse Event Analysis
-   Clinical Trial Risk Analysis Project
-   ================================================ */
+
 
 data adverse_events;
   input USUBJID $ TRTA $ AEBODSYS $ AEDECOD $ AESEV $ AESER $;
