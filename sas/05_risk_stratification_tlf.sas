@@ -1,10 +1,7 @@
-/* ================================================
-   SAS Program 5: Risk Stratification Summary
-   Final TLF — Combines all analyses
-   ================================================ */
+
 
 /* Simulate patient-level risk data
-   (mirrors our Python risk model output) */
+   (mirrors Python risk model output) */
 data patient_risk;
   input USUBJID $ TRTA $ AGEGR $ LOS NUMMED NUMDIAG AEFL $ RISK_GROUP $;
   datalines;
