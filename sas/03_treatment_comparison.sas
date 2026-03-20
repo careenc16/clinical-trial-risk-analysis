@@ -1,7 +1,4 @@
-/* ================================================
-   SAS Program 3: Treatment Comparison
-   Change from Baseline — Primary Efficacy Analysis
-   ================================================ */
+
 
 data lab_data;
   input USUBJID $ TRTA $ LBTESTCD $ VISIT $ BASE AVAL;
